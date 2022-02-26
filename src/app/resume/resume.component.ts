@@ -22,7 +22,7 @@ export class ResumeComponent implements OnInit {
   buttonClass: string = "btn-primary";
   showResume: boolean = false;
   resumeText: string = "View Resume";
-  pdfSrc = "https://itssrish.github.io/Srishti.CV.pdf"; //https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf";
+  pdfSrc = "https://thesrishtisharma.github.io/Resume/Srishti.CV.pdf";
 
   fetchResume(){
     if(this.buttonClass == "btn-primary"){
