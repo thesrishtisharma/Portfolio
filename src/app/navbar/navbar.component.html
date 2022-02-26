@@ -1,0 +1,44 @@
+<div class="header" style="margin-top: 2%;">
+    <div id="leftdiv">
+      <img id="logo" src="../assets/images/My project - white cropped - Copy.png">
+    </div>
+    
+    <div id="rightdiv">
+      <br>
+      <div class="right-one">
+        <a href="https://www.instagram.com/thesrishtisharma/" target="_blank">
+          <img id="instagram" src="../assets/images/instagram (1).png"> 
+        </a>
+        <a href="https://www.linkedin.com/in/srishti-sharma-b8a89b144" target="_blank">
+          <img id="linkedin" src="../assets/images/linkedin.png">
+        </a>
+        <a href="https://github.com/itsSrish" target="_blank">
+          <img id="linkedin" src="../assets/images/github.png">
+        </a>
+      </div>
+      <br>
+      <div class="right-two">
+        <ul id="bigScreen" *ngIf="!menuBarChange">
+          <li><a href="lets-get-in-touch" (click)="clickHighlight('contact-me');" style="text-decoration: {{contactText}}">Contact</a></li>
+          <li><a href="about-me" (click)="clickHighlight('about');" style="text-decoration: {{aboutText}}">About</a></li>
+          <li><a href="" (click)="clickHighlight('home');" style="text-decoration: {{homeText}}">Work</a></li>
+          <!--<li><a href="https://drive.google.com/file/d/1RBFySFE-1mPD9ulUu35PTCBbRS1jCRco/view?usp=sharing" target="_blank" (click)="clickHighlight('resume');" style="text-decoration: {{resumeText}}">Resume</a></li>
+          <li><a href="my-portfolio" (click)="clickHighlight('portfolio');" style="text-decoration: {{portfolioText}}">Portfolio</a></li>
+          <li><a href="my-projects" (click)="clickHighlight('projects');" style="text-decoration: {{projectsText}}">Projects</a></li>-->
+        </ul>
+        <button *ngIf="menuBarChange" class="btn btn-dark"> <img src="../assets/images/menu_white_24dp.svg" (click)="phoneMenu()"> </button>
+        <div class="phoneMenu" *ngIf="openPhoneMenu">
+          <ul>
+            <li><a href="" (click)="clickHighlight('home');" style="text-decoration: {{homeText}}">Work</a></li>
+            <li><a href="about-me" (click)="clickHighlight('about');" style="text-decoration: {{aboutText}}">About</a></li>
+            <li><a href="lets-get-in-touch" (click)="clickHighlight('contact-me');" style="text-decoration: {{contactText}}">Contact</a></li>
+            <!--<li><a href="my-resume" (click)="clickHighlight('resume');" style="text-decoration: {{resumeText}}">Resume</a></li>
+            <li><a href="my-portfolio" (click)="clickHighlight('portfolio');" style="text-decoration: {{portfolioText}}">Portfolio</a></li>
+            <li><a href="my-projects" (click)="clickHighlight('projects');" style="text-decoration: {{projectsText}}">Projects</a></li>-->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>

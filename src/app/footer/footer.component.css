@@ -1,0 +1,106 @@
+.footer{
+    padding: 2%;
+    background-color: #3b83ff;
+    color: white;
+    font-family: Trebuchet MS, sans-serif;
+    font-weight: bold;
+}
+
+.container{
+    text-align: center;
+}
+
+.btn{
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 2%;
+    padding: 2%;
+}
+
+
+@media screen and (max-width: 600px) {
+    /* For phones: */
+
+    .right{
+        text-align: right;
+    }
+
+    .right a{
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+    }
+
+    .right p{
+        font-size: 12px;
+    }
+
+    h4{
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+/* For tablets: */
+    .right{
+        text-align: right;
+    }
+
+    .right a{
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+    }
+
+    .right p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+/* For tablets: */
+.right{
+    text-align: right;
+}
+
+.right a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.right p{
+    font-size: 14px;
+}
+}
+
+@media screen and (min-width: 1500px) {
+/* For desktop: */
+    .footer2{
+        display: flex;
+    }
+
+    .left{
+        width: 50%;
+        text-align: left;
+    }
+
+    .right{
+        width: 50%;
+        text-align: right;
+    }
+
+    .right a{
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+    }
+
+    .right p{
+        font-size: 14px;
+    }
+
+    .btn{
+        width: 70%;
+    }
+}

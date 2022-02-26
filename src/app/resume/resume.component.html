@@ -1,0 +1,8 @@
+<div class="resume">
+    <img src="../../assets/images/computer-mouse-g03be2ba6f_1280.png" width="100%">    
+    <button class="btn {{buttonClass}}" (click)="fetchResume();"> {{resumeText}} </button> 
+
+    <div class="container" *ngIf="showResume">
+        <pdf-viewer src="{{pdfSrc}}" [render-text]="true" [original-size]="false"></pdf-viewer>
+    </div>
+</div>

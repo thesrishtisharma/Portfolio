@@ -1,0 +1,31 @@
+.container{
+    text-align: center;
+}
+
+.mySkills{
+    padding: 5%;
+    text-align: center;
+    background-color: #FEFFE9; 
+    font-family: Georgia, sans-serif;
+    font-weight: bolder;
+    border-radius: 10px;
+    color: #01245e;
+}
+
+.mySkills p{
+    font-family: Trebuchet MS, sans-serif;   
+    font-weight: normal;
+}
+
+img{
+    height: 120px;
+    padding: 2%;
+}
+
+@media screen and (max-width: 600px) {
+    /* For phones: */
+    img{
+        height: 70px;
+        padding: 2%;
+    }
+}

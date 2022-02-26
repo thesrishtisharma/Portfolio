@@ -1,0 +1,62 @@
+table{
+    table-layout: fixed;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+    filter: invert(51%) sepia(94%) saturate(3015%) hue-rotate(164deg) brightness(70%) contrast(300%);
+}
+
+h4{
+    padding: 2%;
+    font-family: Garamond, serif;
+    font-weight: bold;
+    color: #333;
+}
+
+.heading{
+    color: #1F3588;
+    font-weight: bold;
+}
+
+.content{
+    font-weight: normal;
+}
+
+.sub{
+    text-align: center;
+    border: #f5f5f5 solid;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    /* For phones: */
+    .sub{
+        border-bottom: #DBDBDB solid;
+        margin-bottom: 2%;
+    }
+  }
+  
+  @media screen and (min-width: 600px) {
+    /* For tablets: */
+    .sub{
+        border-bottom: #DBDBDB solid;
+        margin-bottom: 2%;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    /* For desktop: */
+    .mainDiv{
+        display: flex;
+    }
+
+    .sub{
+        display: block;
+        float: left;
+        width: 33.33%;
+        border-bottom: #DBDBDB solid;
+    }
+  }

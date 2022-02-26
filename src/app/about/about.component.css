@@ -1,0 +1,81 @@
+.container{
+    margin-top: 2%;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+    text-align: center;
+}
+
+blockquote{
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#name{
+    color: #1F3588;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#leftdiv{
+    /*background-color:Yellow;*/
+    width:40%;
+    float:left;
+}
+
+#rightdiv{
+    /*background-color:red;*/
+    width:60%;
+    float:right;
+    text-align: left;
+    padding: 7%;
+    padding-bottom: 0%
+}
+
+
+@media screen and (max-width: 600px) {
+    /* For phones: */
+    .container{
+        height: 550px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    blockquote{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+/* For tablets: */
+    .container{
+        height: 550px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+/* For tablets: */
+    .container{
+        height: 550px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+/* For desktop: */
+    .container{
+        height: 450px;
+    }
+}

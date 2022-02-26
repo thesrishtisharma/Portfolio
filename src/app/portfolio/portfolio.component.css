@@ -1,0 +1,302 @@
+.work{
+    padding: 5%;
+    text-align: center;
+    background-color: #F2F7FF; 
+    font-family: Georgia, sans-serif;
+    font-weight: bolder;
+    border-radius: 10px;
+    color: #001C48;
+}
+
+.work p{
+    font-family: Trebuchet MS, sans-serif;   
+    font-weight: normal;
+}
+
+a{
+	color: white;
+}
+
+h3{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2{
+  color: #ddd;
+}
+
+body {
+	margin: 0;
+	background-image: linear-gradient(90deg, #201A35, #0B0320);
+	color: #fff;
+	font-family: sans-serif;
+	display: flex;
+	align-items: center;
+	min-height: 100vh;
+}
+
+/**
+  Carousel CSS
+*/
+.slider {
+	width: 100%;
+}
+.slider input {
+	display: none;
+}
+.testimonials {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	min-height: 350px;
+	perspective: 1000px;
+	overflow: hidden;
+}
+.testimonials .item {
+	top: 0;
+	position: absolute;
+	box-sizing: border-box;
+	background-color: #1F3588;
+	padding: 30px;
+	width: 450px;
+	text-align: center;
+	transition: transform 0.4s;
+	-webkit-transform-style: preserve-3d;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	user-select: none;
+	cursor: pointer;
+}
+.testimonials .item img {
+	width: 400px;
+  	height: 200px;
+	border-radius: 0%;
+	/*border: 5px solid rgb(54, 24, 223);*/
+}
+
+@media screen and (max-width: 600px) {
+    /* For phones: */
+    .testimonials .item img {
+		width: 200px;
+		height: 100px;
+	}
+
+	.testimonials .item {
+		width: 250px;
+		padding: 20px;
+		transition: transform 0.2s;
+		margin: 0%;
+		box-shadow: none;
+	}
+
+	
+}
+
+.testimonials .item p {
+	color: #ddd;
+}
+.testimonials .item h2 {
+	font-size: 14px;
+}
+.dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.dots label {
+	display: block;
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: #413B52;
+	margin: 10px;
+	transition: transform 0.2s, color 0.2s;
+}
+
+/* First */
+#t-1:checked ~ .dots label[for="t-1"] {
+	transform: scale(2);
+	background-color: #FF1818;
+}
+#t-1:checked ~ .dots label[for="t-2"] {
+	transform: scale(1.5);
+}
+#t-1:checked ~ .testimonials label[for="t-1"] {
+	z-index: 5;
+}
+#t-1:checked ~ .testimonials label[for="t-2"] {
+	transform: translateX(300px) translateZ(-90px) rotateY(-15deg);
+	z-index: 4;
+}
+#t-1:checked ~ .testimonials label[for="t-3"] {
+	transform: translateX(600px) translateZ(-180px) rotateY(-25deg);
+	z-index: 3;
+}
+#t-1:checked ~ .testimonials label[for="t-4"] {
+	transform: translateX(900px) translateZ(-270px) rotateY(-35deg);
+	z-index: 2;
+}
+#t-1:checked ~ .testimonials label[for="t-5"] {
+	transform: translateX(1200px) translateZ(-360px) rotateY(-45deg);
+  z-index: 1;
+}
+#t-1:checked ~ .testimonials label[for="t-6"] {
+	transform: translateX(1500px) translateZ(90px) rotateY(-55deg);
+}
+
+/* Second */
+#t-2:checked ~ .dots label[for="t-1"] {
+	transform: scale(1.5);
+}
+#t-2:checked ~ .dots label[for="t-2"] {
+	transform: scale(2);
+	background-color: #FF1818;
+}
+#t-2:checked ~ .dots label[for="t-3"] {
+	transform: scale(1.5);
+}
+#t-2:checked ~ .testimonials label[for="t-1"] {
+	transform: translateX(-300px) translateZ(-90px) rotateY(15deg);
+}
+#t-2:checked ~ .testimonials label[for="t-2"] {
+	z-index: 3;
+}
+#t-2:checked ~ .testimonials label[for="t-3"] {
+	transform: translateX(300px) translateZ(-90px) rotateY(-15deg);
+	z-index: 2;
+}
+#t-2:checked ~ .testimonials label[for="t-4"] {
+	transform: translateX(600px) translateZ(-180px) rotateY(-25deg);
+	z-index: 1;
+}
+#t-2:checked ~ .testimonials label[for="t-5"] {
+	transform: translateX(900px) translateZ(-270px) rotateY(-35deg);
+}
+#t-2:checked ~ .testimonials label[for="t-6"] {
+	transform: translateX(1200px) translateZ(-3600px) rotateY(-45deg);
+}
+
+/* Third */
+#t-3:checked ~ .dots label[for="t-2"] {
+	transform: scale(1.5);
+}
+#t-3:checked ~ .dots label[for="t-3"] {
+	transform: scale(2);
+	background-color: #FF1818;
+}
+#t-3:checked ~ .dots label[for="t-4"] {
+	transform: scale(1.5);
+}
+#t-3:checked ~ .testimonials label[for="t-1"] {
+	transform: translateX(-600px) translateZ(-180px) rotateY(25deg);
+}
+#t-3:checked ~ .testimonials label[for="t-2"] {
+	transform: translateX(-300px) translateZ(-90px) rotateY(15deg);
+}
+#t-3:checked ~ .testimonials label[for="t-3"]{
+	z-index: 3;
+}
+#t-3:checked ~ .testimonials label[for="t-4"] {
+	transform: translateX(300px) translateZ(-90px) rotateY(-15deg);
+	z-index: 2;
+}
+#t-3:checked ~ .testimonials label[for="t-5"] {
+  z-index: 1;
+	transform: translateX(600px) translateZ(-180px) rotateY(-25deg);
+}
+#t-3:checked ~ .testimonials label[for="t-6"] {
+	transform: translateX(900px) translateZ(-270px) rotateY(-35deg);
+}
+
+/* Fourth */
+#t-4:checked ~ .dots label[for="t-3"] {
+	transform: scale(1.5);
+}
+#t-4:checked ~ .dots label[for="t-4"] {
+	transform: scale(2);
+	background-color: #FF1818;
+}
+#t-4:checked ~ .dots label[for="t-5"] {
+	transform: scale(1.5);
+}
+#t-4:checked ~ .testimonials label[for="t-1"] {
+	transform: translateX(-900px) translateZ(-270px) rotateY(35deg);
+}
+#t-4:checked ~ .testimonials label[for="t-2"] {
+	transform: translateX(-600px) translateZ(-180px) rotateY(25deg);
+}
+#t-4:checked ~ .testimonials label[for="t-3"] {
+	transform: translateX(-300px) translateZ(-90px) rotateY(15deg);
+	z-index: 2;
+}
+#t-4:checked ~ .testimonials label[for="t-4"] {
+	z-index: 3;
+}
+#t-4:checked ~ .testimonials label[for="t-5"] {
+	transform: translateX(300px) translateZ(-90px) rotateY(-15deg);
+  z-index: 2;
+}
+#t-4:checked ~ .testimonials label[for="t-6"] {
+	transform: translateX(600px) translateZ(-180px) rotateY(-25deg);
+}
+
+/* Fifth */
+#t-5:checked ~ .dots label[for="t-4"] {
+	transform: scale(1.5);
+}
+#t-5:checked ~ .dots label[for="t-5"] {
+	transform: scale(2);
+	background-color: #FF1818;
+}
+#t-5:checked ~ .testimonials label[for="t-1"] {
+	transform: translateX(-1200px) translateZ(-360px) rotateY(45deg);
+}
+#t-5:checked ~ .testimonials label[for="t-2"] {
+	transform: translateX(-900px) translateZ(-270px) rotateY(35deg);
+	z-index: 1;
+}
+#t-5:checked ~ .testimonials label[for="t-3"] {
+	transform: translateX(-600px) translateZ(-180px) rotateY(25deg);
+	z-index: 2;
+}
+#t-5:checked ~ .testimonials label[for="t-4"] {
+	transform: translateX(-300px) translateZ(-90px) rotateY(15deg);
+	z-index: 3;
+}
+#t-5:checked ~ .testimonials label[for="t-5"] {
+	z-index: 5;
+}
+#t-5:checked ~ .testimonials label[for="t-6"] {
+	transform: translateX(300px) translateZ(-90px) rotateY(-15deg);
+}
+
+/* Sixth */
+#t-6:checked ~ .dots label[for="t-5"] {
+	transform: scale(1.5);
+}
+#t-6:checked ~ .dots label[for="t-6"] {
+	transform: scale(2);
+	background-color: #FF1818;
+}
+#t-6:checked ~ .testimonials label[for="t-1"] {
+	transform: translateX(-1500px) translateZ(90px) rotateY(55deg);
+}
+#t-6:checked ~ .testimonials label[for="t-2"] {
+	transform: translateX(-1200px) translateZ(-360px) rotateY(45deg);
+}
+#t-6:checked ~ .testimonials label[for="t-3"] {
+	transform: translateX(-900px) translateZ(-270px) rotateY(35deg);
+	z-index: 1;
+}
+#t-6:checked ~ .testimonials label[for="t-4"] {
+	transform: translateX(-600px) translateZ(-180px) rotateY(25deg);
+	z-index: 2;
+}
+#t-6:checked ~ .testimonials label[for="t-5"] {
+  transform: translateX(-300px) translateZ(-90px) rotateY(15deg);
+	z-index: 3;
+}
+#t-6:checked ~ .testimonials label[for="t-6"] {
+	z-index: 4;
+}
